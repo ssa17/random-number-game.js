@@ -26,3 +26,13 @@ function makeAGuess(answer) {
   
   return differenceFromAnswer(guess, answer);
 }
+
+function playgame() {
+  let answer = generateRandomNumber();
+  let found = false;
+  while(!found) {
+    if(makeAGuess() === "Correct") {
+      break;
+    }
+  }
+}

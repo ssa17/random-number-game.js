@@ -18,5 +18,9 @@ function differenceFromAnswer(guess, answer) {
 
 function makeAGuess(answer) {
   let guess = prompt("Make a guess");
+  if(isNAN(guess)) {
+    console.log("Not an integer");
+    guess = prompt("Make a guess");
+  }
   return differenceFromAnswer(guess, answer);
 }

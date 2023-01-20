@@ -15,3 +15,8 @@ function differenceFromAnswer(guess, answer) {
     return "Too High";
   }
 }
+
+function makeAGuess(answer) {
+  let guess = prompt("Make a guess");
+  return differenceFromAnswer(guess, answer);
+}
